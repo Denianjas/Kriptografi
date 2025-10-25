@@ -15,3 +15,4 @@ def dekripsi(encrypted_text: str, key: bytes) -> str:
     cipher = AES.new(key, AES.MODE_EAX, nonce=nonce)
     decrypted = cipher.decrypt(ciphertext)
     return decrypted.decode('utf-8')
+
